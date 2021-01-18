@@ -14,12 +14,50 @@
 export default {
   data() {
     return{
-      text: "",
-    }
+      "prefCode": string,
+  "cityCode": string,
+  "postcode": string,
+  "oldPostcode": string,
+  "pref": string,
+  "city": string,
+  "town": string,
+  "allAddress": string,
+  "office": string,
+  "hiragana": {
+    "pref": string,
+    "city": string,
+    "town": string,
+    "office": string,
+    "allAddress": string
   },
+  "halfWidthKana": {
+    "pref": string,
+    "city": string,
+    "town": string,
+    "office": string,
+    "allAddress": string
+  },
+  "fullWidthKana": {
+    "pref": string,
+    "city": string,
+    "town": string,
+    "office": string,
+    "allAddress": string
+  },
+  "generalPostcode": boolean,
+  "officePostcode": boolean,
+  "location": {
+    "latitude": number,
+    "longitude": number
+  }
+},
+    }
+  text (){
+    return this.data
+  }
+  
   async created() {
     const item = await axios.get('https://apis.postcode-jp.com/api/v4/postcodes/1000001 macrShCnuXRx72WRiphQHn2XH0nw3jVqjhbewEN'
     );
-}
-}
-</script>
+  }
+  </script>
