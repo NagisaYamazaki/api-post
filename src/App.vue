@@ -17,5 +17,9 @@ export default {
       text: "",
     }
   },
+  async created() {
+    const item = await axios.get('https://apis.postcode-jp.com/api/v4/postcodes/1000001 macrShCnuXRx72WRiphQHn2XH0nw3jVqjhbewEN'
+    );
+}
 }
 </script>
