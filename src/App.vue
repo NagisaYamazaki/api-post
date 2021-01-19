@@ -26,7 +26,7 @@ export default {
      
 
 console.log(item);
-this.result =
+this.text =
 item.data[0].allAddress;
     }
   }
