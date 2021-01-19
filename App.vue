@@ -14,13 +14,14 @@
 export default {
   data() {
     return{
-      text:''
+      text:"",
+      result:"",
     }
   },
   methods:{
     async userClick(){
       const item = await axios.get(
-    'https://apis.postcode-jp.com/api/v4/.postcodes/1000001?apiKey=macrShCnuXRx72WRiphQHn2XH0nw3jVqjhbewEN'
+    `https://apis.postcode-jp.com/api/v4/postcodes/${this.text}?apiKey=macrShCnuXRx72WRiphQHn2XH0nw3jVqjhbewEN`
       );
      
 
